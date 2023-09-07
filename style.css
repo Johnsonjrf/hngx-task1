@@ -8,12 +8,14 @@
     --background-color: #E4F1FF; 
     --primary-color: #27005D;
     --padding: 3px;
+    --username: #9400FF;
 }
 
 .theme{
     --background-color: #27005D; 
     --primary-color: #E4F1FF;
     --padding: 20px;
+    --username: #9400FF;
 }
 
 html, body{
@@ -45,6 +47,10 @@ section{
     background: var(--primary-color);
     padding: .5rem;
     object-fit: cover;
+}
+
+.username{
+    color: var(--username);
 }
 
 a{  
