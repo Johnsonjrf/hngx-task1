@@ -58,7 +58,10 @@ a{
     outline: none;
     box-shadow: 0 0 5px 2px var(--primary-color);
     cursor: pointer;
-    /* background-color: var(--primary-color); */
+}
+
+a:hover{
+    opacity: 0.5;
 }
 
 .toggle{
