@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <div class="toggle">
+            <span class="switch">
+                <p class="switcher"></p>
+            </span>
+        </div>
+        <div class="personal-details">
+            <div class="profile-img">
+                <img src="profile.png" data-testid="slackDisplayimage" alt="johnsonjrf">
+                <h1 data-testid="slackUserName">Johnsonjrf</h1>
+                <h2 data-testid="">Frontend Track</h2>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                
+            </div>
+            <div class="realtime-data-attributes">
+                <h2 data-testid="currentDayOfTheWeek" class="day"></h2>
+                <h2 class="currentUtcTime" data-testid="currentUTCTime"></h2>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #E4F1FF; 
+    --primary-color: #27005D;
+    --padding: 3px;
+}
+
+.theme{
+    --background-color: #27005D; 
+    --primary-color: #E4F1FF;
+    --padding: 20px;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+
+.bxl-github{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.profile-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    padding: .5rem;
+    object-fit: cover;
+}
+
+a{  
+    text-decoration: none;
+    display: inline-flex;
+    width: 50px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px 2px var(--primary-color);
+    cursor: pointer;
+    /* background-color: var(--primary-color); */
+}
+
+.toggle{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.switch{
+    display: inline-flex;
+    width: 35px;
+    height: 18px;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding-left: var(--padding);
+    transition: all .5s ease;
+}
+
+.switcher{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--background-color);
+}
