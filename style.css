@@ -9,6 +9,7 @@
     --primary-color: #27005D;
     --padding: 3px;
     --username: #9400FF;
+    --labels: #EF9595;
 }
 
 .theme{
@@ -16,6 +17,7 @@
     --primary-color: #E4F1FF;
     --padding: 20px;
     --username: #9400FF;
+    --labels: #EFD595;
 }
 
 html, body{
@@ -56,14 +58,16 @@ section{
 a{  
     text-decoration: none;
     display: inline-flex;
-    width: 50px;
-    height: 25px;
+    width: 70px;
+    height: 30px;
     align-items: center;
     justify-content: center;
     border: none;
     outline: none;
     box-shadow: 0 0 5px 2px var(--primary-color);
     cursor: pointer;
+    margin: .5rem 0;
+    
 }
 
 a:hover{
@@ -93,4 +97,14 @@ a:hover{
     height: 13px;
     border-radius: 50%;
     background: var(--background-color);
+}
+
+.day{
+    margin-bottom: .5rem;
+}
+
+span{
+    display: block;
+    color: var(--labels);
+    margin-top: .3rem;
 }

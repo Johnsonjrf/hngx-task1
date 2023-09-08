@@ -9,7 +9,7 @@ const days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "
 // give current UTC time and day of the week in real-time at an interval of 1s
 setInterval(() => {
     // get current UTC time
-    const currentUtcTime = new Date().toUTCString();
+    const currentUtcTime = Math.floor(new Date().getTime()/1000)
     // get current day method that returns the digit of the day
     var day = new Date().getDay()
     //display the current day in a tag
@@ -39,3 +39,5 @@ if (localStorage.getItem("themeMode") == "light") {//remove the lightmode if it 
 } else { //otherwise set it to darkmode by default
     localStorage.setItem("themeMode", "light")
 }
+
+
